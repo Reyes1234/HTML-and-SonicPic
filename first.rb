@@ -1,3 +1,4 @@
+# Welcome to Sonic Pi v3.1
 2.times do
   play:C
   sleep 1
@@ -24,13 +25,13 @@ loop do
 end
 
 loop do
-
+  
   if one_in(2)
     sample:ambi_piano
   else
     sample:bd_808
   end
-
+  
   sleep 0.5
-
+  
 end
