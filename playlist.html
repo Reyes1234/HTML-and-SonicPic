@@ -5,6 +5,46 @@
     <script>
     alert('Welcome to the best playlist');
     console.log('this is the console');
+    let songs = [
+  {
+    title: "You're Beautiful",
+    artist: "James Blunt",
+    album: "Back to Bedlam",
+    year: 2004,
+    art: "https://images-na.ssl-images-amazon.com/images/I/81KHwgVI0WL._SY355_.jpg"
+  },
+  {
+    title: "Let Her Go",
+    artist: "Passenger",
+    album: "All The Little Lights",
+    year: 2012,
+    art: "https://upload.wikimedia.org/wikipedia/en/1/17/Hooverphonic-Blue_Wonder_Power_Milk.jpg"
+  },
+  {
+    title: "We Are Stars",
+    artist: "The Pierces",
+    album: "You & I",
+    year: 2011,
+    art: "https://upload.wikimedia.org/wikipedia/en/6/68/Oh_Land_%28album%29.png"
+  }
+];
+  let myTitle;
+  for (let i = 0; i<songs.length;i++){
+    console.log(songs[i].title);
+    myTitle = document.createElement('div');
+    myTitle.innerText = songs[i].title;
+    document.body.appendChild(myTitle);
+    }
     </script>
-   </body>
-  </html>
+
+
+  <h2>You're Beautiful</h2>
+<a href="https://www.discogs.com/James-Blunt-Back-To-Bedlam/release/517076"><img src="https://images-na.ssl-images-amazon.com/images/I/81KHwgVI0WL._SY355_.jpg" width="400" height="400" title="James Blunt" alt="Back to Bedlam"></a>
+
+<h2>Let Her Go</h2>
+<a href="https://www.discogs.com/Passenger-All-The-Little-Lights/release/4069522"><img src="https://images-na.ssl-images-amazon.com/images/I/61wAeXufkAL._SY355_.jpg" width="400" height="400" title="Passenger" alt="All The Little Lights"></a>
+
+<h2>We Are Stars</h2>
+<a href="https://www.discogs.com/The-Pierces-You-I/master/356425"><img src="https://upload.wikimedia.org/wikipedia/en/3/34/The_Pierces_-_You_%26_I.jpg" width="400" height="400" title="The Pierces" alt="You & I"></a>
+</body>
+</html>
